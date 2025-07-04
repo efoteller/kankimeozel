@@ -316,7 +316,7 @@
             
             <p class="sub-message">
                 Kötü günümde de iyi günümde de hep yanımda oldun.<br>
-                Senin gibi bir arkadaşa sahip olduğum için çok şanslıyımm
+                Senin gibi bir arkadaşa sahip olduğum için çok şanslıyımm<br>Kankilerin en güzelii
             </p>
             
             <div class="friendship-icons">
@@ -334,13 +334,13 @@
     </div>
 
     <script>
-        // Uçan nesneleri oluştur
+        // Uçan nesneleri oluştur (emoji sayısı azaltıldı)
         function createFloatingObjects() {
             const container = document.getElementById('floatingObjects');
             const objectTypes = [
-                {class: 'star', icon: 'fas fa-star', count: 25, colors: ['#69c8ff', '#a6c1ee', '#4facfe']},
-                {class: 'smile', icon: 'fas fa-smile', count: 20, colors: ['#ffd166', '#ffd166', '#ffb74d']},
-                {class: 'music', icon: 'fas fa-music', count: 15, colors: ['#a6c1ee', '#80d0c7', '#69c8ff']}
+                {class: 'star', icon: 'fas fa-star', count: 8, colors: ['#69c8ff', '#a6c1ee', '#4facfe']},
+                {class: 'smile', icon: 'fas fa-smile', count: 6, colors: ['#ffd166', '#ffd166', '#ffb74d']},
+                {class: 'music', icon: 'fas fa-music', count: 4, colors: ['#a6c1ee', '#80d0c7', '#69c8ff']}
             ];
             
             objectTypes.forEach(type => {
@@ -372,7 +372,7 @@
         
         // Parıltı efektleri oluştur
         function createSparkles(parent) {
-            const sparkleCount = 5;
+            const sparkleCount = 3; // Parıltı sayısını azalttım
             for (let i = 0; i < sparkleCount; i++) {
                 const sparkle = document.createElement('div');
                 sparkle.classList.add('sparkle');
@@ -392,9 +392,9 @@
             return colors[Math.floor(Math.random() * colors.length)];
         }
         
-        // Arka plana ek parıltılar ekle
+        // Arka plana ek parıltılar ekle (sayıyı azalttım)
         function createBackgroundSparkles() {
-            for (let i = 0; i < 50; i++) {
+            for (let i = 0; i < 20; i++) { // 50'den 20'ye düşürdüm
                 const sparkle = document.createElement('div');
                 sparkle.classList.add('sparkle');
                 sparkle.style.position = 'fixed';
